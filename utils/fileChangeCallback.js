@@ -19,6 +19,7 @@ const fileReaderLoadCallBack = fileReader => {
     if (!isValidJsonFile(jsonFileData)) {
       alert('please select generated json file ...');
     } else {
+      document.querySelector('.main').innerHTML = '';
       traverseAndAppendFilesAndFolder(
         jsonFileData.files,
         document.querySelector('.main')
