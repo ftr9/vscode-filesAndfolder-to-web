@@ -2,7 +2,7 @@ import isValidJsonFile from './isValidJsonFile';
 import traverseAndAppendFilesAndFolder from './renderFilesAndFolder';
 
 const fileChangeCallback = e => {
-  console.log('file is selected bro');
+
   const selectedJsonFile = e.target.files[0];
   if (selectedJsonFile.type !== 'application/json') {
     alert('please select json file');
